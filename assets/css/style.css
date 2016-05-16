@@ -1,0 +1,60 @@
+body{
+	background: url("../images/background2.jpg") center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.jumbotron{
+	background: rgb(76, 175, 80); 
+	background: rgba(76, 175, 80, 0.5);
+	font-family: 'Play', sans-serif; 
+	color: black;
+}
+.form-group{
+	background: rgb(76, 175, 80); 
+	background: rgba(76, 175, 80, 0.5);
+	font-family: 'Play', sans-serif; 
+	color: black;
+}
+.table-hover{
+	background: rgb(76, 175, 80); 
+	background: rgba(76, 175, 80, 0.5);
+	font-family: 'Play', sans-serif; 
+	color: black;
+}
+.btn-primary{
+	background: rgb(76, 175, 80); 
+	background: rgba(76, 175, 80, 0.5);
+	font-family: 'Play', sans-serif; 
+	color: black;
+}
+.panel-heading{
+	background: rgb(76, 175, 80); 
+	background: rgba(76, 175, 80, 0.5);
+	font-family: 'Play', sans-serif; 
+	color: black;
+}
+.panel-body{
+	background: rgb(76, 175, 80); 
+	background: rgba(76, 175, 80, 0.5);
+	font-family: 'Play', sans-serif; 
+	color: black;
+}
+.panel{
+	background: rgb(76, 175, 80); 
+	background: rgba(76, 175, 80, 0.5);
+	font-family: 'Play', sans-serif; 
+	color: black;
+}
+.panel-primary{
+	background: rgb(76, 175, 80); 
+	background: rgba(76, 175, 80, 0.5);
+	font-family: 'Play', sans-serif; 
+	color: black;
+	border-color: rgb(76, 175, 80);
+}
+.panel-primary>.panel-heading{
+	background: rgb(76, 175, 80); 
+	background: rgba(76, 175, 80, 0.5);
+	font-family: 'Play', sans-serif; 
+	color: black;
+}

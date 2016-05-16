@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Vast Worlds</title>
 
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	
 	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
@@ -33,20 +33,20 @@
 <div class="container">
 
 	<!-- Jumbotron -->
-	<div class="jumbotron" style="background: url(assets/images/map.jpg); color: black; font-family: 'Play', sans-serif;">
+	<div class="jumbotron">
 		<h1 class="text-center">Vast Worlds</h1>
 		<h3 class="text-center">We Bring You Wherever You Want to Go</h3>
 	</div>
 	
-	<div class="row" style="font-family: 'Play', sans-serif; color: black;">
-		<div class="col-lg-12" style="font-family: 'Play', sans-serif; color: black;">
+	<div class="row">
+		<div class="col-lg-12">
 	
 		<!-- Current Transport-->
-			<div class="panel panel-primary" style="font-family: 'Play', sans-serif; color: black;">
-				<div class="panel-heading" style="font-family: 'Play', sans-serif; color: black;">
-					<h3 class="panel-title" style="font-family: 'Play', sans-serif; color: black;"><strong>Current Transport Schedule</strong></h3>
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong>Current Transport Schedule</strong></h3>
 				</div>
-				<div class="panel-body" style="font-family: 'Play', sans-serif; color: black;">
+				<div class="panel-body">
 					<table class="table table-hover" id='transportTable'>
 						<thead>
 							<tr>
@@ -65,36 +65,36 @@
 			</div>
 
 			<!-- Add Transport  -->
-			<div class="panel panel-primary" style="font-family: 'Play', sans-serif; color: black;">
-				<div class="panel-heading" style="font-family: 'Play', sans-serif; color: black;">
-					<h3 class="panel-title" style="font-family: 'Play', sans-serif; color: black;"><strong>Add Transport</strong></h3>
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong>Add Transport</strong></h3>
 				</div>
-				<div class="panel-body" style="font-family: 'Play', sans-serif; color: black;">
+				<div class="panel-body">
 	
 
 				<!-- Entry Form -->
 				<form>
-					<div class="form-group" style="font-family: 'Play', sans-serif; color: black;">
+					<div class="form-group">
 						<label>Transport Name</label>
 						<input type="text" class="form-control" id="transportNameInput">
 					</div>
 
-					<div class="form-group" style="font-family: 'Play', sans-serif; color: black;">
+					<div class="form-group">
 						<label>Destination</label>
 						<input type="text" class="form-control" id="destInput">
 					</div>
 
-					<div class="form-group" style="font-family: 'Play', sans-serif; color: black;">
+					<div class="form-group">
 						<label>First Venture Time (HHmm - military time)</label>
 						<input type="text" class="form-control" id="timeInput">
 					</div>
 
-					<div class="form-group" style="font-family: 'Play', sans-serif; color: black;">
+					<div class="form-group">
 						<label>Frequency (min)</label>
 						<input type="text" class="form-control" id="freqInput">
 					</div>
 					
-					<button type="submit" class="btn btn-primary" id="addTransportBtn" style="font-family: 'Play', sans-serif; color: black;">Submit</button>
+					<button type="submit" class="btn btn-primary" id="addTransportBtn">Submit</button>
 				</form>
 
 				</div>
