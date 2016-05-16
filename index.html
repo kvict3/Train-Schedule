@@ -3,11 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Vast Worlds</title>
-</head>
-<body>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
 
 	<!-- Firebase Reference -->
 	<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
@@ -16,6 +19,15 @@
 	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
 	<link href='https://fonts.googleapis.com/css?family=Play:700' rel='stylesheet' type='text/css'>
+
+	
+
+</head>
+<body>
+
+<div class="embed-responsive">
+  <iframe class="embed-responsive-item" width="0" height="0" src="https://www.youtube.com/embed/hYH3j3u4Ltw?rel=0&amp&autoplay=1;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
 
 <!-- Transport Tracker -->
 <div class="container">
@@ -63,22 +75,22 @@
 				<!-- Entry Form -->
 				<form>
 					<div class="form-group" style="font-family: 'Play', sans-serif; color: black;">
-						<label for="">Transport Name</label>
+						<label>Transport Name</label>
 						<input type="text" class="form-control" id="transportNameInput">
 					</div>
 
 					<div class="form-group" style="font-family: 'Play', sans-serif; color: black;">
-						<label for="">Destination</label>
+						<label>Destination</label>
 						<input type="text" class="form-control" id="destInput">
 					</div>
 
 					<div class="form-group" style="font-family: 'Play', sans-serif; color: black;">
-						<label for="">First Venture Time (HHmm - military time)</label>
+						<label>First Venture Time (HHmm - military time)</label>
 						<input type="text" class="form-control" id="timeInput">
 					</div>
 
 					<div class="form-group" style="font-family: 'Play', sans-serif; color: black;">
-						<label for="">Frequency (min)</label>
+						<label>Frequency (min)</label>
 						<input type="text" class="form-control" id="freqInput">
 					</div>
 					

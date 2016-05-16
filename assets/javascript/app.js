@@ -7,7 +7,7 @@ $("#addTransportBtn").on("click", function(){
 	// Grabs user input
 	var portName = $("#transportNameInput").val().trim();
 	var portDest = $("#destInput").val().trim();
-	var portTime = moment($("#timeInput").val().trim(), "H HH").format("m mm");
+	var portTime = $("#timeInput").val().trim();
 	var portFreq = $("#freqInput").val().trim();
 
 	// Creates local "temporary" object for holding transport data
@@ -58,23 +58,28 @@ transportData.on("child_added", function(childSnapshot, prevChildKey){
 	console.log(portTime);
 	console.log(portFreq);
 
-	// Calculate frequency in minutes
-	// var transportFreq = moment.unix(portFreq).format("minutes");
+	//Intial Time
+	var firstTimeConverted = moment(portTime ,"HH:mm").subtract(1, "years");
+		console.log(firstTimeConverted);
+	
+	//Current time
+	var currentTime = moment();
+		console.log("Current Time is: " + moment(currentTime).format("HH:mm"));
 
-	// Current time
-	var now = moment();
-	console.log(now);
+	var diffTime = moment().diff(moment(firstTimeConverted), "minutes");
+		console.log("Difference in Time is: " + diffTime);
 
-	// To calculate the next arrival 
-	var nextArrival = moment().diff(moment.unix(portTime, "H HH"), "minutes");
-	console.log(nextArrival);
+	//Time Apart (remainder)
+	var tRemainder = diffTime % portFreq; 
+		console.log("Time remaining: " + tRemainder);
 
-	// Calculate the total minutes away
-	// var minAway = now - portTime;
-	// console.log(minAway);
+	//Minutes until Train
+	var minAway = portFreq - tRemainder;
+		console.log("Minutes until the Train: " + minAway);
 
-	var minAway = now.subtract(portTime).minutes();
-	console.log(minAway);
+	//nextTrain
+	var nextTrain = moment().add(minAway, "minutes");
+		console.log("Planned Arrival Time: " + moment(nextTrain).format("HH:mm"));
 
 	// Add each train's data into the table 
 	$("#transportTable > tbody").append("<tr><td>" + portName + "</td><td>" + portDest + "</td><td>" + portFreq + "</td><td>" + portTime + "</td><td>" + minAway + "</td><td>");
